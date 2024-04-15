@@ -13,7 +13,13 @@ const Header = () => {
   return (
     <header>
       <div className="logo">Awesome News</div>
-      <input onChange={onChangeHandler} />
+      <input
+        type="text"
+        onChange={onChangeHandler}
+        id="name"
+        name="name"
+        autoComplete="name"
+      />
       <Navigation />
     </header>
   );
